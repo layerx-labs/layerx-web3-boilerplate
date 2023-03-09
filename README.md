@@ -19,7 +19,7 @@ Note: You will need a metamask wallet to open a pull request and connet to Moonb
 
 If you need any help please contact our team hello@taikai.network
 
-Happy Hacking 
+Happy Hacking 🎯
 
 ## Boiler Plate Project.
 .This boilerplate project with  Nextjs + dappKit + Rocket Kit could be used as a starting point
