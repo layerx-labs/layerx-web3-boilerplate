@@ -13,7 +13,7 @@ Rocket Kit is an React.js open source UI Design System used by LayerX products
 * [Source Code](https://github.com/taikai/rocket-kit)
 * [NPM](https://www.npmjs.com/package/@taikai/rocket-kit)
 
-## Dappkit 
+## dappKit 
 
 dappKit is a powerful SDK that allows you to develop beautiful web3 apps in a matter of minutes. We mean it.
 
@@ -41,6 +41,11 @@ Interact with your smart contract on your dapp by generating a typescript/javasc
 * [Discord](https://discord.gg/layerx)
 * [NPM](https://www.npmjs.com/package/@taikai/dappkit)
 
+### Satellite Products
+
+* [dappKit LaunchPad](https://github.com/taikai/dappkit-launchpad)
+* [dappKit TestFlight](https://github.com/taikai/dappkit-testflight)
+
 -----
 
-Made with ❤️ by [LayerX](https://layerx.xyz) 2023
+Made with ❤️ by [LayerX](https://layerx.xyz)
