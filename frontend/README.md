@@ -23,6 +23,13 @@
 
 ## Getting Started
 
+
+* Create an environment file that specifies the chain Id that you would like to connect to 
+
+```
+echo "NEXT_PUBLIC_CHAIN_ID=5" >> .env
+``` 
+
 First, run the development server:
 
 ```bash

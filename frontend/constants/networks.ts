@@ -1,19 +1,19 @@
 enum ChainName {
-  ETHEREUM = "Ethereum",
-  SENECA = "Seneca",
-  AFRODITE = "Afrodite",
-  IRENE = "Irene",
-  IRIS = "Iris",
   LOCAL = "Local",
+  ETHEREUM = "Ethereum",
+  RINKEBY = "Rinkeby",
+  GOERLI = "Goerli",
+  POLYGON = "Polygon",
+  MUMBAI = "Mumbai",
 }
 
 export enum ChainId {
-  ETHEREUM = 1,
-  SENECA = 1500,
-  AFRODITE = 1501,
-  IRENE = 1502,
-  IRIS = 1503,
   LOCAL = 1337,
+  ETHEREUM = 1, 
+  RINKEBY = 4,
+  GOERLI = 5,
+  POLYGON = 137,
+  MUMBAI = 80001
 }
 
 export interface Chain {
@@ -26,7 +26,7 @@ export const chains: Chain[] = [
   {
     id: ChainId.ETHEREUM,
     name: ChainName.ETHEREUM,
-    rpc: `https://mainnet.infura.io/v3/${process.env.DEPLOY_INFURA_KEY}`,
+    rpc: "https://rpc.ankr.com/eth",
   },
   {
     id: ChainId.LOCAL,
@@ -34,24 +34,24 @@ export const chains: Chain[] = [
     rpc: "http://localhost:8545",
   },
   {
-    id: ChainId.SENECA,
-    name: ChainName.SENECA,
-    rpc: "https://eth-seneca.taikai.network:8080",
+    id: ChainId.GOERLI,
+    name: ChainName.GOERLI,
+    rpc: "https://rpc.ankr.com/eth_goerli",
   },
   {
-    id: ChainId.AFRODITE,
-    name: ChainName.AFRODITE,
-    rpc: "https://eth-afrodite.taikai.network:8080",
+    id: ChainId.MUMBAI,
+    name: ChainName.MUMBAI,
+    rpc: "https://rpc.ankr.com/eth_goerli",
   },
   {
-    id: ChainId.IRENE,
-    name: ChainName.IRENE,
-    rpc: "https://eth-irene.taikai.network:8080",
+    id: ChainId.POLYGON,
+    name: ChainName.POLYGON,
+    rpc: "https://rpc.ankr.com/polygon",
   },
   {
-    id: ChainId.IRIS,
-    name: ChainName.IRIS,
-    rpc: "https://eth-iris.taikai.network:8080",
+    id: ChainId.RINKEBY,
+    name: ChainName.RINKEBY,
+    rpc: "https://rpc.ankr.com/eth_rinkeby",
   },
 ];
 
