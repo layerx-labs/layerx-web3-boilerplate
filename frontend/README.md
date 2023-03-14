@@ -24,11 +24,13 @@
 ## Getting Started
 
 
-* Create an environment file that specifies the chain Id that you would like to connect to 
+Create an environment file that specifies the chain Id that you would like to connect to 
 
 ```
 echo "NEXT_PUBLIC_CHAIN_ID=5" >> .env
 ``` 
+
+Check the supported [./constants/networks.ts](Networks)...
 
 First, run the development server:
 
