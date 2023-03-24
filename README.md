@@ -1,12 +1,11 @@
-# LayerX Web3 Boilerplate Web Project
-
-This boilerplate project uses Nextjs + dappKit + Rocket Kit. 
+## LayerX Web3 Boiler Plate Project
+This boilerplate project with  Nextjs + dappKit + Rocket Kit could be used as a starting point
 
 -  [Contracts](./contracts/README.md) - An Hardhat Project for your smart contracts
 -  [Interface](./frontend/README.md) - A Next.js project with a dappKit Context built-in 
 
 ## Rocket Kit 
-Rocket Kit is an React.js open source UI Design System used by LayerX products
+Rocket Kit is an React.js open source UI Design System used by LayerX products.
 
 * [Storybook](https://main--600c295ccb36300021e7d82f.chromatic.com/)
 * [Chromatic Library](https://www.chromatic.com/library?appId=600c295ccb36300021e7d82f&branch=main)
@@ -15,7 +14,7 @@ Rocket Kit is an React.js open source UI Design System used by LayerX products
 
 ## dappKit 
 
-dappKit is a powerful SDK that allows you to develop beautiful web3 apps in a matter of minutes. We mean it.
+dappKit is a powerful Typescript/Javascript SDK that allows you to develop beautiful web3 apps in a matter of minutes. We mean it.
 
 ### Connect to an EVM Blockchain node in 3 lines of code
 Connecting is as easy as providing a RPC Url and (optionally) a private key to the WebConnection and calling a connect method.
