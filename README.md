@@ -1,14 +1,14 @@
 # LayerX Web3 Boilerplate Web Project
 
-This boilerplate project uses Nextjs + Dappkit + Rocket Kit. 
+This boilerplate project uses Nextjs + dappKit + Rocket Kit. 
 
 -  [Contracts](./contracts/README.md) - An Hardhat Project for your smart contracts
--  [Interface](./frontend/README.md) - A Next.js project with a Dappkit Context built-in 
+-  [Interface](./frontend/README.md) - A Next.js project with a dappKit Context built-in 
 
 ## Rocket Kit 
 Rocket Kit is an React.js open source UI Design System used by LayerX products
 
-* [Story Book](https://main--600c295ccb36300021e7d82f.chromatic.com/)
+* [Storybook](https://main--600c295ccb36300021e7d82f.chromatic.com/)
 * [Chromatic Library](https://www.chromatic.com/library?appId=600c295ccb36300021e7d82f&branch=main)
 * [Source Code](https://github.com/taikai/rocket-kit)
 * [NPM](https://www.npmjs.com/package/@taikai/rocket-kit)
@@ -30,7 +30,7 @@ ERC-20, ERC-1155, ERC-721, or other custom contracts can be deployed to any EVM 
 Integrates easily with Metamask to sign and submit smart contract transactions in your javascript dapp.
 
 ### Generate a wrapper for your EVM contract
-Interact with your smart contract on your dapp by generating a typescript/javascript wrapper using [Dappkit LaunchPad](https://github.com/taikai/dappkit-launchpad)
+Interact with your smart contract on your dapp by generating a typescript/javascript wrapper using [dappKit LaunchPad](https://github.com/taikai/dappkit-launchpad)
 
 ### Important Links
 
