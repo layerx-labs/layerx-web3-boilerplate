@@ -13,7 +13,6 @@ Themes:
 - DeSci
 -  Coomon Goods
 
-
 ### Deliverable 👩‍💻
 You will only entitled to receive the prize if you submit a pull request with the open source code on [Bepro App](https://app.bepro.network).
 
@@ -23,7 +22,7 @@ You will only entitled to receive the prize if you submit a pull request with th
 4. Open a Pull Request with your code.
 5. You are Done! 🙌
 
-Note: You will need a metamask wallet to open a pull request and connect to Moonbeam Chain. BTW , if you need GLMR to transact on Moonbeam you can use the [GLMR Faucet](https://glmr.supply/)
+*Note: You will need a metamask wallet to open a pull request and connect to Moonbeam Chain. BTW , if you need GLMR to transact on Moonbeam you can use the [GLMR Faucet](https://glmr.supply/)*
 
 ### Payment 🏆
 Our Team will analyze all the projects and open a proposal for the winner project. In 7 days once the proposal is settled the prize will be transferred automatically for the wallet that submitted the pull request.
