@@ -1,5 +1,5 @@
 
-## ETH Samba
+## ETH Samba 🇧🇷 - LayerX Bounty 
 The goal of this bounty is to build a web3 project that uses LayerX dappKit and rocketKit frameworks.
 
 Themes:
@@ -14,7 +14,7 @@ Themes:
 -  Coomon Goods
 
 
-### 🚨 Deliverable
+### Deliverable 👩‍💻
 You will only entitled to receive the prize if you submit a pull request with the open source code on [Bepro App](https://app.bepro.network).
 
 1. Connect your wallet and your github account. 
@@ -24,7 +24,7 @@ You will only entitled to receive the prize if you submit a pull request with th
 
 Note: You will need a metamask wallet to open a pull request and connect to Moonbeam Chain. BTW , if you need GLMR to transact on Moonbeam you can use a Faucet
 
-### Payment 
+### Payment 🏆
 Our Team will analyze all the projects and open a proposal for the winner project. In 7 days once the proposal is settled the prize will be transferred automatically for the wallet that submitted the pull request.
 
 If you need any help please contact our team hello@taikai.network
