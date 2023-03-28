@@ -1,3 +1,26 @@
+
+## ETH Samba
+The goal of this bounty is to build a web3 project that uses LayerX dappKit and rocketKit frameworks.
+
+Themes:
+
+- NFT
+- DeFi
+- Infrastructure
+- Integrations
+- Education
+- Supply Chain
+- DeSci
+-  Coomon Goods
+
+To Deliver your solution open a pull request on Bepro App.
+
+Note: You will need a metamask wallet to open a pull request and connect to Moonbeam Chain. BTW , if you need GLMR to transact on Moonbeam you can use a Faucet
+
+If you need any help please contact our team hello@taikai.network
+
+Happy Hacking 🎯
+
 ## LayerX Web3 Boiler Plate Project
 This boilerplate project with  Nextjs + dappKit + Rocket Kit could be used as a starting point
 
