@@ -13,9 +13,19 @@ Themes:
 - DeSci
 -  Coomon Goods
 
-To Deliver your solution open a pull request on Bepro App.
+
+### 🚨 Deliverable
+You will only entitled to receive the prize if you submit a pull request with the open source code on [Bepro App](https://app.bepro.network).
+
+1. Connect your wallet and your github account. 
+2. Click on Start Working
+3. Open a Pull Request 
+4. You are done!
 
 Note: You will need a metamask wallet to open a pull request and connect to Moonbeam Chain. BTW , if you need GLMR to transact on Moonbeam you can use a Faucet
+
+### Payment 
+Our Team will analyze all the projects and open a proposal for the winner project. In 7 days once the proposal is settled the prize will be transferred automatically for the wallet that submitted the pull request.
 
 If you need any help please contact our team hello@taikai.network
 
