@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@mui/material": "^5.11.15",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "dotenv": "^16.0.3",
+    "styled-components": "^5.3.9"
+  }
+}

@@ -29,7 +29,7 @@ const useERC20TokenAllowance = (
 
   const { loading, error, result, execute } = useAsync(executeFunc, false);
   const allowed = result
-    ? fromWei(result.toLocaleString("fullwide", { useGrouping: false }))
+    ? fromWei(result.toLocaleString())
     : "";
   return { loading, error, allowed };
 };

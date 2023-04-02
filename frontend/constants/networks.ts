@@ -5,6 +5,7 @@ enum ChainName {
   GOERLI = "Goerli",
   POLYGON = "Polygon",
   MUMBAI = "Mumbai",
+  AURORA = "Aurora"
 }
 
 export enum ChainId {
@@ -13,7 +14,8 @@ export enum ChainId {
   RINKEBY = 4,
   GOERLI = 5,
   POLYGON = 137,
-  MUMBAI = 80001
+  MUMBAI = 80001,
+  AURORA = 	1313161555 // TESTNET
 }
 
 export interface Chain {
@@ -27,6 +29,11 @@ export const chains: Chain[] = [
     id: ChainId.ETHEREUM,
     name: ChainName.ETHEREUM,
     rpc: "https://rpc.ankr.com/eth",
+  },
+  {
+    id: ChainId.AURORA, // TESTNET,
+    name: ChainName.AURORA,
+    rpc: "https://testnet.aurora.dev"
   },
   {
     id: ChainId.LOCAL,

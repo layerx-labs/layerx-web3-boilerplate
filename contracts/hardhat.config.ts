@@ -1,7 +1,12 @@
+import * as dotenv from "dotenv";
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import 'dotenv/config';
 import TESTING_ACCOUNTS from "./data/accounts-testing"
+
+dotenv.config({ path: __dirname+'/.env' });
+const myPrivateKey: string = process.env.PRIVATE_KEY as string;
+const myInfuraId: string = process.env.DEPLOY_INFURA_KEY as string;
+
 
 const config: HardhatUserConfig = {
   solidity:  {
@@ -21,6 +26,14 @@ const config: HardhatUserConfig = {
     },
     moonbase: {
       url: 'https://rpc.api.moonbase.moonbeam.network',
+    },
+    aurora: {
+      url: `https://aurora-testnet.infura.io/v3/${myInfuraId}`,
+      accounts: [myPrivateKey],
+    },
+    mumbai: {
+      url: `https://polygon-mumbai.infura.io/v3/${myInfuraId}`,
+      accounts: [myPrivateKey],
     },
     moonbeam: {
       url: 'https://rpc.api.moonbeam.network',

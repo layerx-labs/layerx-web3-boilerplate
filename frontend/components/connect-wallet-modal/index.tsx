@@ -53,7 +53,7 @@ const ConnectWalletModal: React.FC<Props> = (props: Props) => {
             </Connector>
           </ConnectorList>
           <Agreement>
-            By connecting a wallet, you agree to the "LayerX Web Boilerplate" Terms of Service and
+            By connecting a wallet, you agree to the &quot;LayerX Web Boilerplate&quot; Terms of Service and
             consent to its Privacy Policy.
           </Agreement>
         </>

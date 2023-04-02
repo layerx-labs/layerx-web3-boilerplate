@@ -25,7 +25,7 @@ const ClickableEthAddress = (props: OnActionClick)=> {
           action={()=> onClick()}
           color="grey100"
           txtColor="black"
-          value={address && `${address.slice(0, 6)}...${address.slice(-4)}`} 
+          value={address! && `${address.slice(0, 6)}...${address.slice(-4)}`} 
           />      
     </AddressOpen>
     );
