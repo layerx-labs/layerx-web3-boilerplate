@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omnimask</title>
+  <style>
+    #lottie {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  
+  <a href="https://omnimask.xyz/dist" target="_self">
+    <div id="lottie"></div>
+</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+  <script>
+    // Substitua esta URL pelo link do seu arquivo JSON da animação Lottie
+    const lottieUrl = 'https://assets8.lottiefiles.com/packages/lf20_isqiiwgz.json';
+
+    // Carregue a animação Lottie e reproduza-a
+
+    
+    fetch(lottieUrl)
+      .then(response => response.json())
+      .then(animationData => {
+        const container = document.getElementById('lottie');
+        lottie.loadAnimation({
+          container: container,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          animationData: animationData,
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+%stroke {
+	text-shadow: 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white),
+		0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white),
+		0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white),
+		0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white), 0px 0px 2px var(--stroke-color, white);
+	filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.2));
+}
+
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+		font-family: inherit;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+	color: white;
+	font-family: 'M PLUS Rounded 1c', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+	body {
+		font-size: 1.6rem;
+		overflow: hidden;
+		height: 100%;
+		position: relative;
+		user-select: none;
+	}
+}
+
+.dim {
+	&[data-animate] {
+		filter: brightness(0.6) saturate(0.8);
+	}
+	
+	transition: 0.5s linear;
+}
+
+.confetti {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	pointer-events: none;
+	perspective: 100vmin;
+
+	span {
+		--size: 5;
+
+		display: block;
+		position: absolute;
+		width: calc(var(--size) * 1px);
+		height: calc(var(--size) * 1px);
+		background-color: blue;
+		animation: rotate linear calc(var(--rs) * 1s) infinite both;
+	}
+}
+
+#app.gotcha {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #666;
+
+	.container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+
+		.game-layer {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			background: url(https://assets.codepen.io/2509128/bg.jpg) center/auto 100% no-repeat;
+
+			.machine-container {
+				position: relative;
+				white-space: nowrap;
+
+				.machine {
+					position: relative;
+					z-index: 1;
+					max-height: 80vh;
+					pointer-events: none;
+					// max-width: 80vw;
+				}
+
+				.backboard {
+					z-index: 0;
+					width: 15vh;
+					height: 13vh;
+					top: 65%;
+					left: 48%;
+					background-color: #e288bb;
+					position: absolute;
+				}
+
+				.title {
+					--stroke-color: #ad8bd6;
+					position: absolute;
+					display: block;
+					top: 10%;
+					width: 100%;
+					text-align: center;
+					@extend %stroke;
+					font-size: 5vh;
+					z-index: 3;
+
+					span {
+						animation: blink 0.8s linear both infinite;
+
+						@for $i from 1 through 10 {
+							&:nth-child(#{$i}) {
+								animation-delay: #{$i * 0.12}s;
+							}
+						}
+					}
+				}
+
+				.price {
+					z-index: 3;
+					position: absolute;
+					color: #fb91c9;
+					font-size: 2.5vh;
+					top: 80%;
+					left: 15%;
+				}
+
+				.handle {
+					z-index: 3;
+					position: absolute;
+					height: 3.9vh;
+					left: 13%;
+					top: 69%;
+				}
+
+				.balls {
+					position: absolute;
+					top: 22%;
+					left: 2%;
+					width: 96%;
+					height: 34.5%;
+				}
+
+				.pointer {
+					position: absolute;
+					height: 15vh;
+					top: 75%;
+					left: 15%;
+					z-index: 5;
+          pointer-events: none;
+
+					img {
+						height: 100%;
+						display: block;
+						transform: rotate(-30deg);
+						transform-origin: 0% 0%;
+						animation: click 1s ease-in-out infinite both;
+					}
+				}
+			}
+		}
+
+		.ui-layer {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			pointer-events: none;
+
+			.title-container {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 10;
+
+				.title {
+					h2 {
+						--stroke-color: #f06e5b;
+						text-align: center;
+						@extend %stroke;
+						font-size: 5vh;
+					}
+				}
+			}
+
+			.prize-container {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				.prize-ball-container {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				.prize-reward-container {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+
+					&>* {
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					.prize {
+						img {
+							height: 50vh;
+						}
+					}
+
+					.shine {
+						img {
+							height: 100vh;
+							animation: spin linear 5s infinite forwards;
+						}
+					}
+				}
+			}
+		}
+
+		.ball {
+			--size: 8vh;
+			--outline: #4c3fc2;
+			--color1: #2facff;
+			--color2: #ff8ff6;
+
+			width: var(--size);
+			height: var(--size);
+			border-radius: 100%;
+			background-color: var(--color1);
+			border: solid 0.8vh var(--outline);
+			position: absolute;
+			overflow: hidden;
+
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				height: 200%;
+				width: 200%;
+				background-color: var(--color2);
+				border-radius: 100%;
+				border: inherit;
+				transform: translate(-25%, -5%);
+			}
+		}
+	}
+
+	.wiggle {
+		animation: wiggle 2s ease-in-out infinite both;
+	}
+}
+
+@keyframes blink {
+	0% {
+		color: #ffc7e5;
+	}
+
+	20% {
+		color: #fcff33;
+	}
+
+	100% {
+		color: #ffc7e5;
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(-5deg);
+	}
+
+	50% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+@keyframes click {
+	0% {
+		transform: rotate(-30deg) translateY(0vh);
+	}
+
+	80% {
+		transform: rotate(-30deg) translateY(5vh);
+	}
+
+	100% {
+		transform: rotate(-30deg) translateY(0vh);
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(0turn);
+	}
+
+	from {
+		transform: rotate(1turn);
+	}
+}
+
+
+@keyframes rotate {
+	from {
+		transform: rotate3d(var(--rx), var(--ry), var(--rz), 0turn);
+	}
+
+	to {
+		transform: rotate3d(var(--rx), var(--ry), var(--rz), 1turn);
+	}
+}
