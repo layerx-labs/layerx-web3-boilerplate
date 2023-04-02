@@ -10,6 +10,7 @@ type OnCloseFunctionType = () => void;
 
 interface Props {
   onClose: OnCloseFunctionType;
+  open: boolean;
 }
 
 const ShowEthAddress = ()=> {
@@ -24,11 +25,11 @@ const ShowEthAddress = ()=> {
 const ConnectWalletModal: React.FC<Props> = (props: Props) => {
   const { connected, connect, disconnect, error } = useWeb3();
   const { isMetaMaskInstalled , startOnboarding } = useMetaMaskOnboarding();
-  const { onClose } = props;
+  const { onClose, open } = props;
   return (
     <Modal
       zIndex={1001}
-      isShowing={true}
+      isShowing={open}
       hide={() => {
         onClose();
       }}
@@ -53,7 +54,7 @@ const ConnectWalletModal: React.FC<Props> = (props: Props) => {
             </Connector>
           </ConnectorList>
           <Agreement>
-            By connecting a wallet, you agree to the "LayerX Web Boilerplate" Terms of Service and
+            By connecting a wallet, you agree to the &quot;RAINsurance&quot; Terms of Service and
             consent to its Privacy Policy.
           </Agreement>
         </>

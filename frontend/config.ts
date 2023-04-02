@@ -1,6 +1,6 @@
 export interface DappConfiguration {
     chainId: number;    
-    autonnect: boolean;
+    autoConnect: boolean;
     switchNetwork: boolean;
     addNewortk: boolean;
     disconnectOnSwitchAccount: boolean;
@@ -9,7 +9,7 @@ export interface DappConfiguration {
 
 export const dappConfig: DappConfiguration = {
     chainId: parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string | "1337" ),
-    autonnect: false,
+    autoConnect: false,
     switchNetwork: true,
     addNewortk: true,
     disconnectOnSwitchAccount: true,
