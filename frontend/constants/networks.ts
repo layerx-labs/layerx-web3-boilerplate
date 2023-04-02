@@ -41,7 +41,7 @@ export const chains: Chain[] = [
   {
     id: ChainId.MUMBAI,
     name: ChainName.MUMBAI,
-    rpc: "https://rpc.ankr.com/eth_goerli",
+    rpc: "https://rpc.ankr.com/polygon_mumbai",
   },
   {
     id: ChainId.POLYGON,
