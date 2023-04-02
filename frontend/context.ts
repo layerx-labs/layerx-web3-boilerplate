@@ -6,7 +6,9 @@ import { dappConfig } from "./config";
 
 export const defaulDappkitProvider = new DappkitReactProvider(
     dappConfig.chainId,
-    chainDict[dappConfig.chainId].rpc,
+    "https://rpc.ankr.com/polygon_mumbai" //  manually setting this temporarily
+    // chainDict[dappConfig.chainId].rpc,
+    , 
     {
         autonnect: false,
         switchNetwork: true,
